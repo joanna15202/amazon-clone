@@ -15,6 +15,7 @@
     "firebase": "^8.7.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
+    "react-back-to-top-button": "^0.0.14",
     "react-currency-format": "^1.0.0",
     "react-dom": "^17.0.2",
     "react-flip-move": "^3.0.4",

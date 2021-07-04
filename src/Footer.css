@@ -1,0 +1,118 @@
+.footer__backToTop {
+  background-color: #37475a;
+}
+
+.footer__backToTop > :hover {
+  background-color: #485769;
+}
+
+.footer__backToTopNext {
+  padding: 15px 0;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.footer {
+  color: white;
+}
+
+.footer > a {
+  text-decoration: none;
+}
+
+.footer__details {
+  background-color: #232f3e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__verticalColumn {
+  display: table;
+  margin: 40px auto;
+  max-width: 60%;
+}
+
+.footer__verticalRow {
+  display: table-row;
+}
+
+.footer__linkColumn {
+  color: white;
+  display: table-cell;
+  padding: 0 10px;
+  line-height: 120%;
+}
+
+.footer__linkColumn > ul {
+  font-size: 14px;
+  font-weight: 550;
+  display: block;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.footer_columnHead {
+  font-weight: 800;
+  font-size: 16px;
+  margin: 6px 0 14px 0;
+  white-space: nowrap;
+}
+
+.footer__colSpacer {
+  display: table-cell;
+  width: 10%;
+  padding: 0 10px;
+}
+
+.footer__line {
+  border-top: 0.7px solid grey;
+}
+
+.footer__contactInfo {
+  text-align: center;
+  margin: 0px auto;
+  background-color: black;
+}
+
+.footer__logo {
+  width: 80px;
+  object-fit: contain;
+  margin: 18px auto;
+}
+
+.footer__logoSection {
+  background-color: #232f3e;
+  text-align: center;
+}
+
+.footer__joannaContact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.footer__joannaContact > p {
+  margin: 10px 0;
+}
+
+.footer__joannaContact > a {
+  text-decoration: none;
+}
+
+.footer__contactIcon {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+}
+
+.footer__contactIcon > :hover {
+  color: grey;
+}

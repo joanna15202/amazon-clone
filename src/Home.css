@@ -1,5 +1,5 @@
 .home {
-  display: flex;
+  position: relative;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +9,7 @@
 }
 
 .home__row {
-  display: flex;
+  position: relative;
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
@@ -18,10 +18,16 @@
 .home__image {
   width: 100%;
   z-index: -1;
-  margin-bottom: -360px;
+  margin-bottom: -160px;
   mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 40%,
     rgba(0, 0, 0, 0)
   );
+}
+
+.home__ad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
 }

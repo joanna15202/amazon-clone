@@ -4,7 +4,7 @@ import GradeIcon from "@material-ui/icons/Grade";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useStateValue } from "./StateProvider";
 
-function Product({ id, title, price, image, rating }) {
+function Product({ id, title, price, image, rating, description }) {
   const [state, dispatch] = useStateValue();
 
   const addToBasket = () => {
@@ -17,15 +17,22 @@ function Product({ id, title, price, image, rating }) {
         image: image,
         price: price,
         rating: rating,
+        description: description,
       },
     });
   };
 
   return (
     <div className="product">
+      {/* Image */}
+      <img src={image} alt="" />
+
       {/* Title/Price/Star Rating */}
       <div className="product__info">
-        <p>{title}</p>
+        <p className="product__title">{title}</p>
+        <p className="product__description">
+          {description.substring(0, 150) + " ..."}
+        </p>
         <p className="product__price">
           <small>$</small>
           <strong>{price}</strong>
@@ -41,11 +48,11 @@ function Product({ id, title, price, image, rating }) {
             ))}
         </div>
       </div>
-      {/* Image */}
-      <img src={image} alt="" />
+
       {/* Add to Basket */}
-      <button onClick={addToBasket} className="btn btn-warning btn-sm">
-        <ShoppingCartIcon className="product__shoppintCartIcon" /> Add to Cart
+      <button onClick={addToBasket} className="btn btn-sm col-12 btn-warning">
+        <ShoppingCartIcon className="product__shoppintCartIcon" />
+        <span>Add to Cart</span>
       </button>
     </div>
   );

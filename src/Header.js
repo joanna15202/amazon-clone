@@ -4,7 +4,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
+import { auth, googleProvider } from "./firebase";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -28,8 +28,14 @@ function Header() {
 
       {/* Search bar */}
       <div className="header__search">
-        <input className="header__searchInput" type="text" />
-        <SearchIcon className="header__searchIcon" />
+        <input
+          className="header__searchInput"
+          type="text"
+          placeholder="Search Items"
+        />
+        <button className="header__searchIcon">
+          <SearchIcon />
+        </button>
       </div>
 
       {/* Header nav */}

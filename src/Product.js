@@ -31,7 +31,7 @@ function Product({ id, title, price, image, rating, description }) {
       <div className="product__info">
         <p className="product__title">{title}</p>
         <p className="product__description">
-          {description.substring(0, 150) + " ..."}
+          {description.substring(0, 80) + " ..."}
         </p>
         <p className="product__price">
           <small>$</small>

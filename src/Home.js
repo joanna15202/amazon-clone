@@ -10,6 +10,28 @@ function Home() {
       .then((json) => setProducts(json));
   }, []);
 
+  let productsToRender = [];
+  const renderProducts = (products, start, end) => {
+    productsToRender = [];
+    for (let i = start; i < end; i++) {
+      productsToRender.push(
+        <div className="home__col col-lg-3 col-md-4 col-sm-6 col-12">
+          {products.slice(i, i + 1).map((product) => (
+            <Product
+              id={product.id}
+              title={product.title}
+              price={product.price}
+              rating={5}
+              image={product.image}
+              description={product.description}
+            />
+          ))}
+        </div>
+      );
+    }
+    return productsToRender;
+  };
+
   return (
     <div className="home">
       <div className="home__container">
@@ -20,69 +42,7 @@ function Home() {
         />
 
         <div className="home__row row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            {products.slice(0, 1).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            {products.slice(1, 2).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="home__row row">
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            {products.slice(2, 3).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            {products.slice(3, 4).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            {products.slice(4, 5).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
+          {renderProducts(products, 0, 8).map((product) => product)};
         </div>
 
         <img
@@ -92,96 +52,7 @@ function Home() {
         />
 
         <div className="home__row row">
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            {products.slice(5, 6).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            {products.slice(6, 7).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            {products.slice(7, 8).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="home__row row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            {products.slice(8, 9).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            {products.slice(9, 10).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="home__row row">
-          <div className="col-lg-8 col-md-8 col-sm-12">
-            {products.slice(13, 14).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-12">
-            {products.slice(14, 15).map((product) => (
-              <Product
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                rating={5}
-                image={product.image}
-                description={product.description}
-              />
-            ))}
-          </div>
+          {renderProducts(products, 8, 21).map((product) => product)};
         </div>
 
         <img

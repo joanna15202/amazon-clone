@@ -1,9 +1,22 @@
 /* Header */
 .header {
-  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__firstLine {
+  height: 65px;
   display: flex;
   align-items: center;
   background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__secondLine {
+  height: 40px;
+  background-color: #242f3e;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -12,24 +25,29 @@
 .header__logo {
   width: 100px;
   object-fit: contain;
-  margin: 0 20px;
+  margin: 0 5px 0 20px;
   margin-top: 18px;
 }
 
 .header__search {
   display: flex;
   flex: 1;
-  align-items: center;
+  height: 70%;
 }
 
 .header__searchInput {
-  border: 1px solid white;
   width: 100%;
+  border: 1px solid white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .header__searchIcon {
   border: #ffbd69;
   background-color: #ffbd69;
+  width: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .header__searchIcon:hover {
@@ -46,17 +64,18 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 12px;
   color: white;
 }
 
 .header__optionLineOne {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .header__optionLineTwo {
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 .header__optionBasket {
@@ -68,6 +87,7 @@
 .header__basketCount {
   margin-left: 10px;
   margin-right: 10px;
+  color: orange;
 }
 
 .header__link {

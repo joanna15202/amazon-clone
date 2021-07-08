@@ -19,8 +19,13 @@ function MyCarousel() {
         interval={5000}
       >
         <img
-          // loading="lazy"
+          loading="lazy"
           src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/NzUwMTVjZTAt/NzUwMTVjZTAt-NmI3MWUwNmYt-w1500._CB666233452_.jpg"
+          alt="ad_1"
+        />
+        <img
+          loading="lazy"
+          src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/Njk4MjQxYjct/Njk4MjQxYjct-OTg2NzBkNmEt-w3000._CB666253599_.jpg"
           alt="ad_1"
         />
         <img
@@ -40,7 +45,7 @@ function MyCarousel() {
         />
         <img
           loading="lazy"
-          src="https://images-na.ssl-images-amazon.com/images/G/01/Audible/en_US/images/creative/amazon/0867-ACQ-BAU-Gateways-Testing_Amazon_Gateway-Hero-DT_1500x600_EVERGREEN_Device_ENG_V01._CB669075118_.jpg"
+          src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2021/journeys/MzBiNjIyYjgt/MzBiNjIyYjgt-N2M4ZmRmZjgt-w3000._CB665928848_.jpg"
           alt="ad_5"
         />
         <img

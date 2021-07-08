@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Product from "./Product";
+import MyCarousel from "./MyCarousel";
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -35,11 +36,7 @@ function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/TomorrowWar/GW-Trailer-1/TWAR_2021_GWBleedingHero_1500x600_TeaserChrisSoloNoGun_TH_Pre_en-US_ARSDE._CB668924267_.jpg"
-          alt=""
-        />
+        <MyCarousel />
 
         <div className="home__row row">
           {renderProducts(products, 0, 8).map((product) => product)};

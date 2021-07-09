@@ -1,20 +1,48 @@
 .checkout {
   display: flex;
   padding: 20px;
-  background-color: white;
+  background-color: #eaeded;
   height: max-content;
 }
 
 .checkout__ad {
   width: 60%;
+
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+  margin: 10px auto 20px auto;
+}
+
+.checkout__products {
+  background-color: white;
+}
+
+.checkout__hello {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.checkout__titlePart {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid lightgray;
 }
 
 .checkout__title {
-  margin-right: 10px;
   padding: 10px;
-  border-bottom: 1px solid lightgray;
+  font-size: 30px;
+}
+
+.checkout__titlePrice {
+  padding: 10px 0 0 10px;
+  font-size: 15px;
+  color: #616565;
+  right: 25px;
+  position: absolute;
+  bottom: 0;
+}
+
+.h3 {
+  font-size: 30px;
 }

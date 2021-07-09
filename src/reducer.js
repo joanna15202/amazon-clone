@@ -33,6 +33,19 @@ const reducer = (state, action) => {
         basket: newBasket,
       };
 
+    case "REMOVE_THIS_ITEM_FROM_BASKET":
+      let basketAfterDeleteItem = [];
+      state.basket.map((item) => {
+        if (item.id !== action.id) {
+          basketAfterDeleteItem.push(item);
+        }
+      });
+
+      return {
+        ...state,
+        basket: basketAfterDeleteItem,
+      };
+
     case "SET_USER":
       return {
         ...state,

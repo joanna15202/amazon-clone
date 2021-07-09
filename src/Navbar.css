@@ -42,8 +42,6 @@ a {
   /*Mobile View */
   .nav-options {
     display: flex;
-    width: 30%;
-    height: 580px;
     position: absolute;
     top: 40px;
     left: -100%;
@@ -76,7 +74,6 @@ a {
 
   .option {
     display: flex;
-
     align-items: center;
     justify-content: left;
     height: 5vw;
@@ -86,7 +83,6 @@ a {
 
   .option:hover {
     color: black;
-
     align-items: center;
     justify-content: left;
     padding: 15px 30px;

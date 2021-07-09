@@ -39,7 +39,7 @@ function Home() {
         <MyCarousel />
 
         <div className="home__row row">
-          {renderProducts(products, 0, 8).map((product) => product)};
+          {renderProducts(products, 0, 8).map((product) => product)}
         </div>
 
         <img
@@ -49,7 +49,7 @@ function Home() {
         />
 
         <div className="home__row row">
-          {renderProducts(products, 8, 21).map((product) => product)};
+          {renderProducts(products, 8, 21).map((product) => product)}
         </div>
 
         <img

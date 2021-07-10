@@ -57,6 +57,7 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+            <Footer />
           </Route>
 
           {/* Route Login */}

@@ -1,12 +1,12 @@
 .payment {
   background-color: white;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .payment__container > h1 {
   text-align: center;
-  padding: 10px;
   font-weight: 400;
-  background-color: rgb(234, 237, 237);
   border-bottom: 1px solid lightgray;
 }
 
@@ -19,18 +19,17 @@
   padding: 20px;
   margin: 0 20px;
   border-bottom: 1px solid lightgray;
+  position: relative;
 }
 
 /* title takes up 20% */
-.payment__title {
-  flex: 0.2;
-}
 
 /* the others takes up 80% */
 .payment__address,
-.payment__items,
+.payment__item,
 .payment__details {
   flex: 0.8;
+  padding-left: 5%;
 }
 
 .payment__details > form {
@@ -41,14 +40,18 @@
   padding-bottom: 20px;
 }
 
-.payment__details > form > div > button {
-  background: #f0c14b;
-  border-radius: 2px;
+.payment__button {
+  font-size: 15px;
   width: 100%;
   height: 30px;
-  border: 1px solid;
-  font-weight: bolder;
-  margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 5px;
   color: #111;
+  transition: 0.5s;
+  background-image: linear-gradient(to bottom, #f7dd91 30%, #f0c24e 100%);
+  border: 1px solid lightgrey;
+}
+
+.payment__button:hover {
+  background-image: linear-gradient(to bottom, #f4d587 30%, #eeba38 100%);
+  border: 1px solid lightgrey;
 }

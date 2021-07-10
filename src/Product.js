@@ -50,7 +50,7 @@ function Product({ id, title, price, image, rating, description }) {
       </div>
 
       {/* Add to Basket */}
-      <button onClick={addToBasket} className="btn btn-sm col-12 btn-warning">
+      <button onClick={addToBasket} className="btn-sm col-12">
         <ShoppingCartIcon className="product__shoppintCartIcon" />
         <span>Add to Cart</span>
       </button>

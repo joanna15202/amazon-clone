@@ -78,8 +78,6 @@ function Login() {
       <div className="login__container">
         <h1>Sign-in</h1>
 
-        <button onClick={handleClickGoogle}>Sign-In with Google</button>
-
         <form action="">
           <h5>Email</h5>
           <input
@@ -112,6 +110,27 @@ function Login() {
         <button onClick={register} className="login__registerButton">
           Create Your Amazon Account
         </button>
+
+        <div className="or-container">
+          <div className="line-separator"></div>
+          <div className="or-label">or</div>
+          <div className="line-separator"></div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-12">
+            <button
+              className="btn btn-google btn-outline"
+              onClick={handleClickGoogle}
+            >
+              <img
+                className="google-image"
+                src="https://img.icons8.com/color/16/000000/google-logo.png"
+              />
+              Sign-In with Google
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

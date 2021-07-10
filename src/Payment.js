@@ -111,7 +111,7 @@ function Payment() {
         {/* Payment section - review items */}
         <div className="payment__section">
           <div className="payment__title">
-            <h3>Review Items and Delivery</h3>
+            <h3>Review Items</h3>
           </div>
           <div className="payment__item">
             {basketItems?.map((item) => (
@@ -142,7 +142,10 @@ function Payment() {
                   thousandSeparator={true}
                   prefix={"$"}
                 />
-                <button disabled={processing || disabled || succeeded}>
+                <button
+                  className="payment__button"
+                  disabled={processing || disabled || succeeded}
+                >
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
               </div>

@@ -3,7 +3,14 @@ import "./CheckoutProduct.css";
 import GradeIcon from "@material-ui/icons/Grade";
 import { useStateValue } from "./StateProvider";
 
-function CheckoutProduct({ id, image, title, price, hideButton }) {
+function CheckoutProduct({
+  id,
+  image,
+  title,
+  price,
+  hideButton,
+  hideQuantity,
+}) {
   const [{ basket, state }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
@@ -54,9 +61,11 @@ function CheckoutProduct({ id, image, title, price, hideButton }) {
               -
             </button>
           )}
-          <span className="checkoutProduct__quantity">
-            Qty: {basket.filter((item) => item.id === id).length}
-          </span>
+          {!hideQuantity && (
+            <span className="checkoutProduct__quantity">
+              Qty: {basket.filter((item) => item.id === id).length}
+            </span>
+          )}
           {!hideButton && (
             <button
               onClick={addToBasket}
@@ -70,7 +79,7 @@ function CheckoutProduct({ id, image, title, price, hideButton }) {
         {!hideButton && (
           <button
             onClick={removeThisItemFromBasket}
-            className="btn checkoutProduct__delete"
+            className="checkoutProduct__delete"
           >
             Delete
           </button>

@@ -49,6 +49,7 @@ function App() {
           <Route path="/orders">
             <Header />
             <Orders />
+            <Footer />
           </Route>
 
           {/* Route Login */}

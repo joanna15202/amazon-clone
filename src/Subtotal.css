@@ -3,11 +3,22 @@
   flex-direction: column;
   justify-content: space-between;
   width: 400px;
-  height: 150px;
   padding: 20px;
-  background-color: #f3f3f3;
+  background-color: white;
   border: 1px solid #dddddd;
   border-radius: 3px;
+}
+
+.subtotal__freeShipping {
+  color: green;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.subtotal__subtotal {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 .subtotal__gift {
@@ -15,10 +26,19 @@
   align-items: center;
 }
 
-.subtotal > button {
-  background: #f0c14b;
-  border: 1px solid;
+.subtotal__button {
+  background: #fbd815;
+  border: none;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  font-size: 13px;
+  font-weight: 400;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+
+.subtotal__button:hover {
+  background: #f7ca01;
+  border: none;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
 }

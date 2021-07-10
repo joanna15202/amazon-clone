@@ -4,6 +4,7 @@ import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
 import { getBasketTotal } from "./reducer";
 import { useHistory } from "react-router";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 function Subtotal() {
   const history = useHistory();
@@ -11,10 +12,14 @@ function Subtotal() {
 
   return (
     <div className="subtotal">
+      <div className="subtotal__freeShipping">
+        <CheckCircleIcon fontSize="small" />
+        Your order qualifies for FREE Shipping.
+      </div>
       <CurrencyFormat
         renderText={(value) => (
           <>
-            <p>
+            <p className="subtotal__subtotal">
               Subtotal ({basket.length} items): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
@@ -30,7 +35,7 @@ function Subtotal() {
       />
       <button
         onClick={(e) => history.push("/payment")}
-        className="btn btn-warning btn-sm"
+        className="btn btn-warning subtotal__button"
       >
         Proceed to checkout
       </button>

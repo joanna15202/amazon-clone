@@ -22,6 +22,16 @@ function Payment() {
   const [disabled, setDisabled] = useState(true);
   const [clientSecret, setClientSecret] = useState(true);
 
+  const basketItems = [];
+  basket.forEach(function (item) {
+    var existing = basketItems.filter(function (v, i) {
+      return v.id == item.id;
+    });
+    if (existing.length == 0) {
+      basketItems.push(item);
+    }
+  });
+
   useEffect(() => {
     // generate the special stripe secret which allows us to charge a customer
     const getClientSecret = async () => {
@@ -104,13 +114,12 @@ function Payment() {
             <h3>Review Items and Delivery</h3>
           </div>
           <div className="payment__item">
-            {basket.map((item) => (
+            {basketItems?.map((item) => (
               <CheckoutProduct
                 id={item.id}
                 title={item.title}
                 image={item.image}
                 price={item.price}
-                rating={item.rating}
               />
             ))}
           </div>

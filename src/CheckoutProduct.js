@@ -46,22 +46,32 @@ function CheckoutProduct({ id, image, title, price, hideButton }) {
         </p>
 
         <p className="checkoutProduct__quantityChange">
-          <button
-            onClick={removeFromBasket}
-            className="checkoutProduct__plusminus"
-          >
-            -
-          </button>
+          {!hideButton && (
+            <button
+              onClick={removeFromBasket}
+              className="checkoutProduct__plusminus"
+            >
+              -
+            </button>
+          )}
           <span className="checkoutProduct__quantity">
             Qty: {basket.filter((item) => item.id === id).length}
           </span>
-          <button onClick={addToBasket} className="checkoutProduct__plusminus">
-            +
-          </button>
+          {!hideButton && (
+            <button
+              onClick={addToBasket}
+              className="checkoutProduct__plusminus"
+            >
+              +
+            </button>
+          )}
         </p>
 
         {!hideButton && (
-          <button onClick={removeThisItemFromBasket} className="btn checkoutProduct__delete">
+          <button
+            onClick={removeThisItemFromBasket}
+            className="btn checkoutProduct__delete"
+          >
             Delete
           </button>
         )}

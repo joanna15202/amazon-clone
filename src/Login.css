@@ -47,13 +47,20 @@
 }
 
 .login__signInButton {
-  background: #f0c14b;
+  background-image: linear-gradient(to bottom, #f7dd91 30%, #f0c24e 100%);
+  border: 1px solid lightgrey;
+  bottom: 5%;
+  left: 15%;
+  right: 15%;
   border-radius: 2px;
   width: 100%;
-  height: 30px;
-  border: 1px solid;
+  height: 35px;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+}
+
+.login__signInButton:hover {
+  background-image: linear-gradient(to bottom, #f4d587 30%, #eeba38 100%);
+  border: 1px solid lightgrey;
 }
 
 .login__registerButton {
@@ -63,4 +70,45 @@
   border: 1px solid;
   margin-top: 10px;
   border-color: darkgray;
+}
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin: 25px 0;
+}
+
+.line-separator {
+  background-color: #ccc;
+  flex-grow: 5;
+  height: 1px;
+}
+
+.or-label {
+  flex-grow: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.btn-google {
+  color: #545454;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px #ddd;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 10px 19px;
+  cursor: pointer;
+  position: relative;
+}
+
+.google-image {
+  position: absolute;
+  left: 6%;
+  top: 35%;
 }

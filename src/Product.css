@@ -47,6 +47,8 @@
 .product__shoppintCartIcon {
   background-color: black;
   color: white;
+  position: absolute;
+  left: 5px;
 }
 
 .product > button {
@@ -56,7 +58,7 @@
   right: 15%;
   max-width: 70%;
   color: #111;
-  height: 35px;
+  height: 7%;
   transition: 0.5s;
   background-image: linear-gradient(to bottom, #f7dd91 30%, #f0c24e 100%);
   border: 1px solid lightgrey;
@@ -65,10 +67,4 @@
 .product > button:hover {
   background-image: linear-gradient(to bottom, #f4d587 30%, #eeba38 100%);
   border: 1px solid lightgrey;
-}
-
-.product__shoppintCartIcon {
-  position: absolute;
-  left: 5px;
-  top: 4px;
 }

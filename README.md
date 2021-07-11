@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+<!-- PROJECT TITLE -->
+<p align="center">
+  <!-- PROJECT INTRO -->
+  <h1 align="center">Amazon-Clone</h3>
+  <p align="center">
+    This is an Amazon-Clone project following tutorial from Clever Programmer with some self-added features.
+    <br />
+    <a href="https://challenge-64600.web.app/">View Demo</a>
+    <br />
+    <a href="https://github.com/joanna15202/amazon-clone.git">
+      <img src="https://logolook.net/wp-content/uploads/2021/03/Amazon-logo.png" width="150px" height="100px">
+    </a>
+  </p>
+  
+  <!-- PROJECT SCREENSHOTS -->
+  <a href="https://github.com/joanna15202/amazon-clone.git">
+    <img src="./home-screenshot.png">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#key-features">Key Features</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#run">Run on Your Local PC</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+Below are the screenshots of main pages. You can also see the live demo [here](https://challenge-64600.web.app/). 
 
-### `npm test`
+**Login Page:**
+<p align="center">  
+  <!-- PROJECT SCREENSHOTS -->
+    <img src="./Login-screenshot.png">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Checkout Page:**
+<p align="center">  
+  <!-- PROJECT SCREENSHOTS -->
+    <img src="./checkout-screenshot.png">
+</p>
 
-### `npm run build`
+**Payment Page:**
+<p align="center">  
+  <!-- PROJECT SCREENSHOTS -->
+    <img src="./payment-screenshot.png">
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Order Page:**
+<p align="center">  
+  <!-- PROJECT SCREENSHOTS -->
+    <img src="./orders-screenshot.png">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Responsive layout
+* User authentication - Email/Password and Google
+* Fakestore API
+* Payment processing
+* Orders stored by webhook
+* Quantity adjustment in cart
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React.js
+* Express.js
+* Redux
+* Webhooks
+* Stripe
+* Bootstrap
+* Firestore DB
+* Fakestore API
+* Firebase Authentication
+* Firebase Deployment
+* Material UI Icons
+* Media-query
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Learn More
+To get a local copy up and running follow these simple steps.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* npm
+  ```sh
+  $ npm install npm@latest -g
+  ```
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repo
+   ```sh
+   $ git clone https://github.com/joanna15202/amazon-clone.git
+   ```
+2. Install NPM packages
+   ```sh
+   $ npm install
+   ```
 
-### Analyzing the Bundle Size
+### Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. cd into the project directory
+   ```sh
+   $ cd amazon-clone
+   ```
+2. Run the app
+   ```sh
+   $ npm start
+   ```
+3. Open a browser, and head over to **localhost:3000**
+4. Login and add some products to the cart, play around with it.
+5. If you want to test the payments, run:
+   ```sh
+   $ firebase emulators:start
+   ```
+   Head over to the payment page, and insert below test card information.
+   <img src="./card.png">
+6. Boom! You should now see the orders and your previous orders made by the same email.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTACT -->
+## Contact
 
-### Advanced Configuration
+* Email - joanna15202@gmail.com
+* LinkedIn - https://www.linkedin.com/in/yu-hsing-joanna-wang/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

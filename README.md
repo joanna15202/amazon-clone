@@ -97,6 +97,7 @@ Below are the screenshots of main pages. You can also see the live demo [here](h
 * Firebase Deployment
 * Material UI Icons
 * Media-query
+* FlipMove
 
 
 <!-- GETTING STARTED -->
